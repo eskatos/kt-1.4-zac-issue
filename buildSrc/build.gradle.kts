@@ -8,7 +8,6 @@ buildscript {
 }
 plugins {
     `kotlin-dsl`
-    `java-gradle-plugin`
     kotlin("jvm") version "1.3.72"
 }
 
@@ -27,6 +26,5 @@ gradlePlugin {
 }
 
 dependencies {
-    compileOnly(gradleApi())
     implementation("com.android.tools.build:gradle:4.0.2")
 }
