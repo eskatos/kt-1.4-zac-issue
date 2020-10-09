@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.config.KotlinCompilerVersion
+
 buildscript {
     repositories {
         gradlePluginPortal()
@@ -27,3 +29,5 @@ gradlePlugin {
 dependencies {
     implementation("com.android.tools.build:gradle:4.0.2")
 }
+
+println("buildSrc build script classpath kotlin compiler version " + KotlinCompilerVersion.VERSION)

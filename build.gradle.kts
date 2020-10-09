@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.config.KotlinCompilerVersion
+
 buildscript {
     repositories {
         gradlePluginPortal()
@@ -29,3 +31,5 @@ repositories {
     google()
     jcenter()
 }
+
+println("root build script classpath kotlin compiler version " + KotlinCompilerVersion.VERSION)
