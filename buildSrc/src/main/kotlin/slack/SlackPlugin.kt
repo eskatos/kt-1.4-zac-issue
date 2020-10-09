@@ -6,6 +6,6 @@ import org.gradle.kotlin.dsl.create
 
 class SlackPlugin : Plugin<Project> {
   override fun apply(target: Project) {
-    val slackExtension = target.extensions.create<SlackExtension>("slack")
+    target.extensions.create<SlackExtension>("slack")
   }
 }
