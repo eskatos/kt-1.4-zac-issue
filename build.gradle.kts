@@ -1,5 +1,15 @@
+buildscript {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+        google()
+        jcenter()
+    }
+}
+
 plugins {
-    id("my-plugin")
+    kotlin("jvm") version "1.4.10"
+    id("slack.gradle")
 }
 
 slack {
@@ -12,4 +22,10 @@ slack {
             }
         }
     }
+}
+
+repositories {
+    mavenCentral()
+    google()
+    jcenter()
 }

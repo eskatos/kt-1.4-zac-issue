@@ -1,8 +1,13 @@
+package slack
+
+import com.android.build.gradle.api.ApplicationVariant
+import com.android.builder.model.BuildType
+import com.android.builder.model.ProductFlavor
 import org.gradle.api.Action
 import org.gradle.api.model.ObjectFactory
-import javax.inject.Inject
-import org.gradle.kotlin.dsl.*
+import org.gradle.kotlin.dsl.newInstance
 import java.io.File
+import javax.inject.Inject
 
 @DslMarker
 annotation class SlackExtensionMarker
