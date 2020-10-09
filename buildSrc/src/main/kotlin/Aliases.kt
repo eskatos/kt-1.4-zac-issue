@@ -1,6 +1,6 @@
 import org.gradle.api.Action
 import org.gradle.api.Project
-import org.gradle.kotlin.dsl.findByType
+import org.gradle.kotlin.dsl.configure
 import org.gradle.plugin.use.PluginDependenciesSpec
 import org.gradle.plugin.use.PluginDependencySpec
 import slack.AndroidHandler
@@ -37,7 +37,7 @@ fun PluginDependenciesSpec.android(module: String): PluginDependencySpec =
  * ```
  */
 fun Project.slack(body: SlackExtension.() -> Unit) {
-  extensions.findByType<SlackExtension>()?.let(body) ?: error("Slack extension not found.")
+  configure(body)
 }
 
 /**
