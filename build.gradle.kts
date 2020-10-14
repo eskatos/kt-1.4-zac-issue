@@ -12,6 +12,8 @@ buildscript {
 plugins {
     kotlin("jvm") version "1.4.10"
     id("slack.gradle")
+    // Uncomment this to trigger the issue
+//    id("com.android.application")
 }
 
 slack {
