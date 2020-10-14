@@ -33,6 +33,7 @@ wire {
         // If you keep it commented, observe that java sources are generated at
         // build/generated/source/wire anyway even though we've opted in to kotlin support, suggesting
         // calling this function in the DSL doesn't actually call Wire's extension
+        println("wire.kotlin is $this of type ${this::class}")
 //        android = false
     }
     sourcePath {

@@ -18,6 +18,7 @@ plugins {
 
 slack {
     android {
+        println("slack.android is $this of type ${this::class}")
         app {
             permissionAllowlist {
                 if (name == "externalRelease") {
